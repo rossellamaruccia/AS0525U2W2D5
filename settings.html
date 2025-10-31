@@ -13,19 +13,172 @@
   </head>
   <body>
     <header>
-      <img />
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+          <div class="row flex-nowrap justify-content-between">
+            <div
+              class="col col-lg-1 align-content-center justify-content-center"
+            >
+              <a class="navbar-brand" href="#">
+                <img
+                  class="img-fluid"
+                  src="./Netflix-assets/assets/netflix_logo.png"
+              /></a>
+            </div>
+            <div class="col d-none">
+              <button
+                class="navbar-toggler btn-outline-light border rounded-0 w-50"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-justified">
+                    <a class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-justified">
+                    <a class="nav-link">TV-Shows</a>
+                  </li>
+                  <li class="nav-justified">
+                    <a class="nav-link">Movies</a>
+                  </li>
+                  <li class="nav-justified">
+                    <a class="nav-link">Recently Added</a>
+                  </li>
+                  <li class="nav-justified">
+                    <a class="nav-link">My List</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col d-none">
+              <i class="bi bi-search text-white mx-3"></i>
+              <a class="nav-link text-light">KIDS</a>
+              <i class="bi bi-bell-fill text-white mx-3"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-      <div class="container">
-        <div class="row">
-          <div class="col">
+      <div class="container-fluid bg-dark">
+        <div class="row mx-auto">
+          <div class="col col-2"></div>
+          <div class="col col-8 mx-auto">
+            <h1 class="h1 text-light">Edit Profile</h1>
+            <hr class="text-secondary mt-3" />
+          </div>
+          <div class="col col-2"></div>
+        </div>
+        <div class="row bg-dark mx-auto justify-content-center">
+          <div class="col col-3 text-center">
+            <img
+              src="./Netflix-assets/assets/avatar.png"
+              class="img-fluid"
+              width="80%"
+            />
+          </div>
+          <div class="col col-5">
             <form>
-              <input />
-              <label></label>
-              <input />
-              <label></label>
+              <fieldset>
+                <div class="mb-3">
+                  <label for="name" class="form-label"></label>
+                  <input
+                    id="name"
+                    type="text"
+                    class="form-control border-0 rounded-0 bg-secondary text-white"
+                    placeholder="Strive Student"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <div class="input-group d-block mb-3">
+                    <label for="language" class="form-label text-white d-block"
+                      >Language:</label
+                    >
+                    <select
+                      id="language"
+                      class="form-select bg-dark text-white d-block w-25"
+                      id="inputGroupSelect01"
+                    >
+                      <option selected>English</option>
+                      <option value="1">French</option>
+                      <option value="2">Italian</option>
+                      <option value="3">Spanish</option>
+                    </select>
+                  </div>
+                </div>
+                <hr class="text-secondary mt-2" />
+
+                <div class="input-group d-block mb-3">
+                  <h2 class="h5 text-white">Maturity Settings:</h2>
+                  <p class="small bg-secondary text-white px-2 my-2">
+                    ALL MATURITY RATINGS
+                  </p>
+                  <p class="small text-secondary">
+                    Show titles of <b>all maturity ratings</b> for this profile.
+                  </p>
+                  <button
+                    class="btn btn-outline-secondary px3 py1 border rounded-0"
+                  >
+                    EDIT
+                  </button>
+                </div>
+                <hr class="text-secondary mt-2" />
+                <div class="input-group d-block mb-3">
+                  <h2 class="h5 text-white">Autoplay controls:</h2>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-dark border-2 border-light rounded-0"
+                      type="checkbox"
+                      id="control1"
+                    />
+                    <label class="form-check-label text-light" for="control1">
+                      Autoplay next episode in a series on all devices.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-dark border-2 border-light rounded-0"
+                      type="checkbox"
+                      id="control2"
+                    />
+                    <label class="form-check-label text-light" for="control2">
+                      Autoplay next previews while browsing on all devices.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
             </form>
           </div>
+        </div>
+        <div class="row mx-auto text-center">
+          <div class="col col-2"></div>
+          <div class="col col-8">
+            <hr class="text-secondary mt-3" />
+            <button
+              class="btn btn-outline-secondary border rounded-0 py-1 px-3 mx-5"
+            >
+              SAVE
+            </button>
+            <button
+              class="btn btn-outline-secondary border rounded-0 py-1 px-3 mx-5"
+            >
+              CANCEL
+            </button>
+            <button
+              class="btn btn-outline-secondary border rounded-0 py-1 px-3 mx-5"
+            >
+              DELETE PROFILE
+            </button>
+          </div>
+          <div class="col col-2"></div>
         </div>
       </div>
     </main>
